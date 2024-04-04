@@ -8,7 +8,7 @@
 
   <h2>He're your operating systems:</h2>
   @for(os of operatingSystems; track os.id){
-    <li>{{os.name}}</li>
+    <li (mouseover)="onMouseOver(os.name)">{{os.name}}</li>
   }
   <div class="editable-div" [contentEditable]="isEditable"></div>
 </section>

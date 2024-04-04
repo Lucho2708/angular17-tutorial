@@ -11,6 +11,10 @@ import { Component } from '@angular/core';
 export class UserComponent {
   userName: string = "Luis";
   doesUserExists: boolean = true;
-  operatingSystems = [{id: 'win', name: 'Windows'}, {id: 'osx', name: 'MacOS'}, {id: 'linux', name: 'Linux'}];
-  isEditable: boolean =  true;
+  operatingSystems = [{ id: 'win', name: 'Windows' }, { id: 'osx', name: 'MacOS' }, { id: 'linux', name: 'Linux' }];
+  isEditable: boolean = true;
+
+  onMouseOver(osName: string): void {
+    console.log(osName);
+  }
 }
