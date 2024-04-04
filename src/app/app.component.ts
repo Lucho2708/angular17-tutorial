@@ -11,6 +11,7 @@ import { UserComponent } from './components/user/user.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  userOcupation: string = "Developer";
   title = 'angular17-tutorial';
   city: string = 'Colombia';
 }
